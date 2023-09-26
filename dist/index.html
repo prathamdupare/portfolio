@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/src/styles/home.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Logo Here</div>
+      <div class="header-link-container">
+        <div class="header-links">Home</div>
+        <div class="header-links">My blog</div>
+        <button class="theme-button">Theme</button>
+      </div>
+    </header>
+    <div class="main">
+      <div class="main-name">
+        <div class="name">John Doe</div>
+      </div>
+      <div class="span-div">
+        <span id="element"></span>
+      </div>
+    </div>
+    <div class="spacer">
+      <div class="horizontal-line"></div>
+    </div>
+    <div class="about">
+      <div class="about-wrapper">
+        <div class="about-heading">About</div>
+        <div class="about-content">
+          <p>
+            "I'm a passionate web developer with a lifelong interest in
+            technology. From a young age, I was captivated by the world of
+            technology and had an eye for beautiful user interfaces.
+          </p>
+          <p>
+            I remember customizing ROMs on my phones, which sparked my
+            fascination with software design. My journey then led me to the
+            world of Linux, where I delved into the intricacies of open-source
+            systems. It was here that I discovered my true calling
+            <span class="web-development">—web development.</span>
+          </p>
+          <p>
+            I thrive on the challenge of bringing code to life and creating
+            stunning user interfaces that leave a lasting impression.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div>Tech Stack I use</div>
+    <div>Projects</div>
+    <div>Blogs</div>
+    <div>Contact</div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Front-End Developer", "Backend Developer", "Web-Developer"],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+  <footer>blah</footer>
+</html>
