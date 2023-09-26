@@ -4,6 +4,8 @@
 }
 
 body {
+  background-color: #242424;
+  color: white;
   margin: 0;
 }
 
@@ -28,7 +30,8 @@ header {
 }
 
 .theme-button:hover {
-  background-color: #e2e3e4; /* New background color on hover */
+  background-color: #000000;
+  color: white;
 }
 
 .logo {
@@ -121,4 +124,16 @@ header {
 
 .web-development {
   color: aquamarine;
+}
+
+.tech-stack {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack-wrapper {
+  width: 70%;
 }
