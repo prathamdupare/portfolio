@@ -1,0 +1,536 @@
+@import url(https://unpkg.com/open-props);
+@import url(https://unpkg.com/open-props/normalize.min.css);
+
+* {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  background-color: #242424;
+  color: white;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  background-color: #242424;
+}
+
+.theme-button {
+  display: inline-block;
+  background-color: #ffffff; /* Background color */
+  color: black; /* Text color */
+  padding: 6px 10px; /* Padding around the text */
+  border: none; /* Remove border */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 16px; /* Text size */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth color transition on hover */
+}
+
+.theme-button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+.logo {
+  padding: 10px;
+}
+
+.header-link-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-links {
+  padding: 10px;
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: #242424;
+  color: white;
+
+  flex-direction: column;
+  font-size: 100px;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.main-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  font-size: 100%;
+}
+
+.span-div {
+  font-size: 100%;
+}
+
+.element {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally within the parent container */
+}
+
+#element {
+  align-self: flex-start; /* Align the element to the start (top) of the flex container */
+}
+#element {
+  align-self: flex-start;
+}
+
+.spacer {
+  display: flex;
+  justify-content: center;
+  height: 3px;
+  background-color: #242424;
+}
+
+.horizontal-line {
+  /* margin-top: 100px; */
+  width: 80%;
+  height: 2px;
+  background-color: #8d8d8d;
+}
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  background-color: #242424;
+  color: white;
+  height: auto;
+  /* height: 400px; */
+  /* height: 200px; */
+}
+
+.about-wrapper {
+  width: 80%;
+}
+p {
+  max-width: 100%;
+  font-size: 20px; /* Ensure paragraphs take up full width */
+  margin-bottom: 25px; /* Add spacing between paragraphs */
+}
+.about-heading {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.about-content {
+  font-size: 35px;
+}
+
+.web-development {
+  color: aquamarine;
+}
+
+.tech-stack {
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+.tech-stack-wrapper {
+  width: 80%;
+}
+
+.media-element {
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 300%;
+}
+
+.colored {
+  font-size: 90%;
+}
+
+.media-element-name {
+  font-size: 30%;
+}
+
+.media-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+.media-scroller {
+  width: 100%;
+  background-color: #302f2f;
+  /* width: 10px; */
+  display: grid;
+
+  /* gap: var(--size-3); */
+  grid-auto-flow: column;
+  border-radius: 10px;
+  grid-auto-columns: 15%;
+  overscroll-behavior-inline: contain;
+
+  overflow-x: auto;
+
+  white-space: nowrap; /* Prevent text wrapping */
+  scrollbar-width: thin; /* For Firefox */
+  scrollbar-color: #555 #888; /* Scrollbar track and thumb color */
+
+  /* Add some padding and margin for aesthetics */
+  padding: 10px;
+  margin: 10px 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .media-scroller {
+    scrollbar-width: thin;
+    scrollbar-color: #555 #888;
+  }
+}
+
+/* Style for the scrollbar thumb */
+.media-scroller::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Style for the scrollbar track */
+.media-scroller::-webkit-scrollbar-track {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+.project-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  justify-content: center;
+  align-items: center;
+
+  /* width: 90%; */
+}
+
+.project {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin: 0px;
+  width: 100%;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center;
+  /* height: 50vh; Remove this fixed height */
+  width: 80%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  min-height: 50vh; /* Add a minimum height */
+}
+
+.project-info > img {
+  width: 80%; /* Make the image responsive by setting its width to 100% */
+  height: 40vh; /* Set a fixed height for your image */
+  object-fit: cover; /* Crop the image to cover the entire container */
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  /* padding-left: 30px; */
+  height: auto;
+}
+.project-about {
+  height: auto;
+  background-color: #302f2f;
+  padding: 30px;
+  font-size: large;
+  margin-right: 10px;
+  border-radius: 10px;
+  max-width: 1200px;
+  /* Apply a subtle box shadow to an element */
+
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Horizontal offset, Vertical offset, Blur radius, Color with opacity */
+}
+.project-name {
+  font-size: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.project-heading {
+  font-size: 40px;
+  width: 80%;
+  /* align-items: left; */
+}
+.contact {
+  padding-top: 50px;
+  padding: 20px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #242424;
+  color: white;
+  height: auto;
+  /* height: 400px; */
+  /* height: 200px; */
+}
+
+.contact-wrapper {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  padding-top: 0px;
+  border-radius: 10px;
+  background-color: #333;
+}
+p {
+  max-width: 100%;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+.contact-heading {
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+.contact-content {
+  font-size: 35px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  padding: 20px;
+  margin-top: 20px;
+  /* margin-right: 40px; */
+  margin-bottom: 50px;
+  font-size: larger;
+}
+
+.contact-me {
+  display: flex;
+  justify-content: center;
+  /* margin-top: 10px; */
+  margin-bottom: 10px;
+  align-items: center;
+}
+.contact-container {
+  background-color: #242424;
+  max-width: 400px;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  color: white;
+}
+input {
+  background-color: white;
+  color: black;
+}
+textarea {
+  background-color: white;
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-container {
+  margin-bottom: 20px;
+  color: black;
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #ffffff;
+  font-weight: bold;
+  color: #333;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #242424;
+  color: white;
+}
+
+/* Reset some default styles */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Apply styles to the header */
+.header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Style the header links */
+.header-link-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header-links {
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header-links:hover {
+  color: #9da1a5;
+}
+
+/* Style the theme button */
+.theme-button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.theme-button:hover {
+  background-color: #fff;
+  color: #232324;
+}
+
+@media screen and (max-width: 1000px) {
+  .name {
+    font-size: 70px;
+  }
+
+  .span-div {
+    font-size: 80px;
+  }
+
+  .colored {
+    font-size: 100%;
+  }
+
+  .media-element {
+    font-size: 200%;
+  }
+
+  .media-scroller {
+    width: 100%;
+  }
+
+  .media-element-name {
+    font-size: 30%;
+  }
+
+  .contact-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .name {
+    font-size: 40px;
+  }
+
+  .span-div {
+    font-size: 40px;
+  }
+
+  .project-info {
+    flex-direction: column;
+  }
+}
+
+footer {
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
