@@ -11,12 +11,14 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 
 const ProfileCard = () => {
   return (
-    <Card className="m-4">
+    <Card className="m-4 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ...">
       <CardHeader className="flex flex-row ">
         <img className="w-[100px] mx-3" src="https://github.com/shadcn.png" />
         <div>
-          <CardTitle>Pratham Dupare</CardTitle>
-          <CardDescription>Web Developer</CardDescription>
+          <CardTitle className="text-xl">Pratham Dupare</CardTitle>
+          <CardDescription className="text-white">
+            Web Developer
+          </CardDescription>
         </div>
       </CardHeader>
     </Card>
