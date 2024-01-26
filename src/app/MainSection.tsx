@@ -16,7 +16,7 @@ function MainSection() {
       <ResizableHandle withHandle />
       <ResizablePanel>
         <ProfileCard />
-        <SkillCard />
+        <SkillCard Title="Frontend" />
       </ResizablePanel>
     </ResizablePanelGroup>
   );
