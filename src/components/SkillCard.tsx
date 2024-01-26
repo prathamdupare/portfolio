@@ -9,18 +9,18 @@ import {
 
 import { Badge } from "@/components/ui/badge";
 
-const SkillCard = ({ Title }) => {
+const SkillCard = ({ Title, Skills }) => {
   return (
     <Card className="m-4">
       <CardHeader className="flex flex-row ">
         <div>
           <CardTitle className="p-">{Title}</CardTitle>
           <div className="p-2">
-            <Badge variant="outline">TypeScript</Badge>
-            <Badge variant="outline">JavaScript</Badge>
-            <Badge variant="outline">HTML</Badge>
-            <Badge variant="outline">CSS</Badge>
-            <Badge variant="outline">TypeScript</Badge>
+            {Skills.map((title, index) => (
+              <Badge key={index} variant="outline">
+                {title}
+              </Badge>
+            ))}
           </div>
         </div>
       </CardHeader>
