@@ -14,7 +14,7 @@ const ProjectCard = ({ Image, Title, Tools }) => {
     <Card className="m-4">
       <CardHeader className="flex flex-row ">
         <div>
-          <div className="w-full h-[150px] my-2">
+          <div className="w-full  my-2">
             <img
               className="w-full h-full object-cover"
               src={Image}
