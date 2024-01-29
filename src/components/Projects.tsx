@@ -1,10 +1,18 @@
 import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
-  const Tools = ["TypeScript", "JavaScript", "HTML"];
-  const Tools2 = ["TypeScript", "JavaScript", "HTML", "TailwindCSS"];
+  const Tools = [
+    "JavaScript",
+    "TailwindCSS",
+    "NodeJS",
+    "ReactJS",
+    "MongoDB",
+    "ExpressJS",
+  ];
+  const Tools2 = ["TypeScript", "NodeJS", "MongoDB", "ExpressJS"];
   const image = "https://github.com/shadcn.png";
   const mernBlog = "images/showcase.jpg";
+  const restAPI = "images/rest.jpg";
 
   return (
     <>
@@ -12,7 +20,7 @@ export default function Projects() {
         <div className="mx-3 flex w-full font-bold">Projects</div>
         <div className="flex flex-row">
           <ProjectCard Image={mernBlog} Title="MERN Blog Site" Tools={Tools} />
-          <ProjectCard Image={mernBlog} Title="Rest-Api" Tools={Tools2} />
+          <ProjectCard Image={restAPI} Title="Rest API" Tools={Tools2} />
         </div>
       </div>
     </>
