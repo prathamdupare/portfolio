@@ -11,21 +11,21 @@ import { Badge } from "@/components/ui/badge";
 
 const ProjectCard = ({ Image, Title, Tools }) => {
   return (
-    <Card className="m-4">
-      <CardHeader className="flex flex-row ">
+    <Card className="m-3">
+      <CardHeader className="flex flex-row sm:flex-row ">
         <div>
-          <div className="w-full  my-2">
+          <div className="flex w-full my-2">
             <img
-              className="w-full h-full object-cover"
+              className="object-cover w-full"
               src={Image}
               alt="ProjectImage"
             />
           </div>
-          <CardTitle className="p-">{Title}</CardTitle>
+          <CardTitle className="flex flex-col flex-wrap">{Title}</CardTitle>
 
-          <div className="p-2">
-            {Tools.map((title, index) => (
-              <Badge className="mx-1" key={index} variant="">
+          <div className="p-2 flex flex flex-wrap">
+            {Tools.map((title: string, index: number) => (
+              <Badge className="m-1 " key={index} variant="">
                 {title}
               </Badge>
             ))}

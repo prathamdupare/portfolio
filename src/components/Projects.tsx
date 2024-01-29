@@ -8,12 +8,11 @@ export default function Projects() {
 
   return (
     <>
-      <div className="">
-        <div className="mx-3">Projects</div>
+      <div className="flex flex-col  ">
+        <div className="mx-3 flex w-full font-bold">Projects</div>
         <div className="flex flex-row">
           <ProjectCard Image={mernBlog} Title="MERN Blog Site" Tools={Tools} />
-          <ProjectCard Image={image} Title="Extra" Tools={Tools2} />
-          <ProjectCard Image={image} Title="Extra" Tools={Tools} />
+          <ProjectCard Image={mernBlog} Title="Rest-Api" Tools={Tools2} />
         </div>
       </div>
     </>
