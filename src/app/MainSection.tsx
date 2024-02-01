@@ -5,8 +5,6 @@ import {
   ResizablePanelGroup,
 } from "@/components/ui/resizable";
 import ProfileCard from "@/components/ProfileCard";
-import SkillCard from "@/components/SkillCard";
-import Skills from "@/components/Skills";
 import Projects from "@/components/Projects";
 import Sidebar from "@/components/Sidebar";
 import TechStack from "@/components/TechStack";
@@ -18,7 +16,7 @@ import { ScrollArea } from "@/components/ui/scroll-area";
 function MainSection() {
   return (
     <ResizablePanelGroup direction="horizontal">
-      <ResizablePanel className="">
+      <ResizablePanel defaultSize={15} className="max-w-[400px]">
         <Sidebar />
       </ResizablePanel>
       <ResizableHandle withHandle />
@@ -33,8 +31,6 @@ function MainSection() {
           <Projects />
           <Separator />
         </ScrollArea>
-
-        <div className="h-36">hello</div>
       </ResizablePanel>
     </ResizablePanelGroup>
   );

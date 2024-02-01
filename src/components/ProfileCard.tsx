@@ -1,30 +1,21 @@
 import {
   Card,
-  CardContent,
   CardDescription,
-  CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
 
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { profileInfo } from "../config";
 
 const ProfileCard = () => {
   return (
     <Card className="m-4 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ...">
       <CardHeader className="flex flex-row ">
-        <img
-          alt="profile"
-          className="w-[100px] mx-3"
-          src="https://github.com/shadcn.png"
-        />
+        <img alt="profile" className="w-[100px] mx-3" src={profileInfo.img} />
         <div>
-          <CardTitle className="text-xl">Pratham Dupare</CardTitle>
+          <CardTitle className="text-xl">{profileInfo.name}</CardTitle>
           <CardDescription className="text-white font-bold">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum
-            aperiam enim quasi doloribus, ad, officiis corporis et laudantium
-            quod excepturi quisquam at. Asperiores porro corporis quisquam optio
-            obcaecati, recusandae nihil?
+            {profileInfo.description}
           </CardDescription>
         </div>
       </CardHeader>
