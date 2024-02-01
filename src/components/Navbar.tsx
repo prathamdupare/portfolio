@@ -11,7 +11,7 @@ const Navbar = () => {
         </div>
         <div className="flex gap-2">
           <ModeToggle />
-          <Button variant="secondary">
+          <Button variant="secondary" className="bg-green-500">
             Contact Me
             <ChevronRightIcon className="h-4 w-4" />
           </Button>
