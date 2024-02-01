@@ -21,6 +21,7 @@ export default function Projects() {
         <div className="flex flex-row">
           <ProjectCard Image={mernBlog} Title="MERN Blog Site" Tools={Tools} />
           <ProjectCard Image={restAPI} Title="Rest API" Tools={Tools2} />
+          <ProjectCard Image={restAPI} Title="Rest API" Tools={Tools2} />
         </div>
       </div>
     </>

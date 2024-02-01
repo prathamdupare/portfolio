@@ -13,7 +13,7 @@ import Sidebar from "@/components/Sidebar";
 function MainSection() {
   return (
     <ResizablePanelGroup direction="horizontal">
-      <ResizablePanel className="min-w-[200px] max-w-[300px]">
+      <ResizablePanel className="min-w-[200px] max-w-[400px]">
         <Sidebar />
       </ResizablePanel>
       <ResizableHandle withHandle />

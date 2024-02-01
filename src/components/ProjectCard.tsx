@@ -7,7 +7,13 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+import GitHubIcon from "@mui/icons-material/GitHub";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
+
 import { Badge } from "@/components/ui/badge";
+import { Button } from "./ui/button";
+import GitHub from "@mui/icons-material/GitHub";
+import ArrowOutward from "@mui/icons-material/ArrowOutward";
 
 const ProjectCard = ({ Image, Title, Tools }) => {
   return (
@@ -25,6 +31,17 @@ const ProjectCard = ({ Image, Title, Tools }) => {
                 {title}
               </Badge>
             ))}
+          </div>
+          <div className="flex gap-3">
+            <Button variant="secondary">
+              Live Preview{" "}
+              <div>
+                <ArrowOutward />
+              </div>
+            </Button>
+            <Button variant="secondary">
+              Source Code <GitHubIcon className="ml-2" />
+            </Button>
           </div>
         </div>
       </CardHeader>
