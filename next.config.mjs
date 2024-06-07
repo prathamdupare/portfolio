@@ -4,6 +4,7 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: "export",
 };
 
 export default withSentryConfig(
@@ -46,4 +47,3 @@ export default withSentryConfig(
     automaticVercelMonitors: true,
   },
 );
-
