@@ -10,6 +10,8 @@ import Image from "next/image";
 
 import { Separator } from "@/components/ui/separator";
 import Footer from "@/components/Footer";
+import Achievements from "@/components/Achievements";
+import { Experience } from "@/components/Experience";
 export default function Home() {
   const navItems = [
     { name: "Home", link: "/" },
@@ -24,13 +26,13 @@ export default function Home() {
         <FloatingNav navItems={navItems} />
         <Typewriter />
 
-        <Separator />
         <Skills />
 
-        <Separator />
         <Work />
 
-        <Separator />
+        <Experience />
+
+        <Achievements />
 
         <Footer />
       </TracingBeam>

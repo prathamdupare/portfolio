@@ -94,10 +94,8 @@ const skills = [
   },
 ];
 
-const firstArray = skills.slice(0, 5);
-const secondArray = skills.slice(5, 9);
-const thirdArray = skills.slice(9, 12);
-const fourthArray = skills.slice(12);
+const firstArray = skills.slice(0, 8);
+const secondArray = skills.slice(9, 13);
 
 // Ensure each skill has a unique id
 
@@ -119,14 +117,6 @@ export default function Skills() {
 
       <div className="flex flex-row items-center justify-center my-10  w-full">
         <AnimatedTooltip items={secondArray} />
-      </div>
-
-      <div className="flex flex-row items-center justify-center my-10  w-full">
-        <AnimatedTooltip items={thirdArray} />
-      </div>
-
-      <div className="flex flex-row items-center justify-center my-10  w-full">
-        <AnimatedTooltip items={fourthArray} />
       </div>
     </div>
   );
