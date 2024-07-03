@@ -1,14 +1,9 @@
-import { Navbar } from "@/components/Navbar";
 import Skills from "@/components/Skills";
-import Testor from "@/components/Testor";
 import { Typewriter } from "@/components/Typewriter";
 import { FloatingNav } from "@/components/ui/floating-navbar";
-import { HeroHighlight, Highlight } from "@/components/ui/hero-highlight";
 import { TracingBeam } from "@/components/ui/tracing-beam";
 import Work from "@/components/Work";
-import Image from "next/image";
 
-import { Separator } from "@/components/ui/separator";
 import Footer from "@/components/Footer";
 import Achievements from "@/components/Achievements";
 import { Experience } from "@/components/Experience";
@@ -25,15 +20,10 @@ export default function Home() {
       <TracingBeam>
         <FloatingNav navItems={navItems} />
         <Typewriter />
-
         <Skills />
-
         <Work />
-
         <Experience />
-
         <Achievements />
-
         <Footer />
       </TracingBeam>
     </>

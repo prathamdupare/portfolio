@@ -1,10 +1,9 @@
 "use client";
 
-import Image from "next/image";
 import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 import { DirectionAwareHover } from "./ui/direction-aware-hover";
 
-import { EarthIcon, Github, GithubIcon, Moon, Sun } from "lucide-react";
+import { EarthIcon, GithubIcon } from "lucide-react";
 import Link from "next/link";
 import { Button } from "./ui/button";
 
@@ -73,6 +72,7 @@ export function Typewriter() {
         </div>
       </div>
 
+      <TypewriterEffectSmooth words={words} />
       <div className="flex flex-row md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
         <Link href="https://github.com/prathamdupare">
           <button className="p-[3px] relative">
@@ -98,7 +98,7 @@ export function Typewriter() {
   );
 }
 
-function CopyIcon(props) {
+function CopyIcon(props: any) {
   return (
     <svg
       {...props}

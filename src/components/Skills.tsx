@@ -97,10 +97,6 @@ const skills = [
 const firstArray = skills.slice(0, 8);
 const secondArray = skills.slice(9, 13);
 
-// Ensure each skill has a unique id
-
-// Remaining skills (Emily Davis, Tyler Durden, Dora) are left blank as per the example provided.
-
 export default function Skills() {
   return (
     <div className="flex flex-col mt-8  items-center justify-center">
