@@ -18,6 +18,11 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.linkedin.com",
       },
+
+      {
+        protocol: "https",
+        hostname: "img.shields.io",
+      },
     ],
   },
 };

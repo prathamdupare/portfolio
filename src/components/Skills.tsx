@@ -54,8 +54,7 @@ const skills = [
     id: 8,
     name: "Express Enthusiast",
     designation: "Framework Fanatic",
-    image:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    image: "/express.png",
   },
   {
     id: 9,
@@ -99,19 +98,19 @@ const secondArray = skills.slice(9, 13);
 
 export default function Skills() {
   return (
-    <div className="flex flex-col mt-8  items-center justify-center">
+    <div className="flex flex-col my-10  items-center justify-center">
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
         Skills
       </p>
-      <p className="text-base md:text-lg mt-4 text-white font-normal inter-var text-center">
+      <p className="text-base md:text-lg bg-secondary p-3 rounded-md mt-4 text-white font-normal inter-var text-center">
         Hover over the icons to see info.
       </p>
 
-      <div className="flex flex-row items-center justify-center my-10  w-full">
+      <div className="flex flex-row  items-center justify-center my-10  w-full">
         <AnimatedTooltip items={firstArray} />
       </div>
 
-      <div className="flex flex-row items-center justify-center my-10  w-full">
+      <div className="flex flex-row  items-center justify-center my-10  w-full">
         <AnimatedTooltip items={secondArray} />
       </div>
     </div>

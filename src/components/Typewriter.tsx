@@ -28,30 +28,31 @@ export function Typewriter() {
     },
   ];
   return (
-    <div className="flex flex-col items-center mt-8 justify-center h-screen">
-      <p className="text-neutral-600 dark:text-neutral-200 text-base  font-bold mb-10">
-        Freelancer, Web Developer, Linux Nerd
+    <div className="flex flex-col items-center h-screen mt-8 justify-center">
+      <p className="text-neutral-600 dark:text-neutral-200 bg-secondary p-4 rounded-md text-base  font-bold mb-10">
+        Hey! Welcome to my portfolio! I am a FullStack Developer,Freelancer, and
+        a Linux Nerd.
       </p>
       <div className="flex flex-row items-center gap-5">
         <DirectionAwareHover imageUrl="/hero.png">Pratham</DirectionAwareHover>
 
         <div className="relative mockup-code mb-6"></div>
 
-        <div className="flex flex-col items-center justify-center bg-background">
-          <div className="max-w-md p-6 bg-card rounded-lg shadow-lg">
+        <div className="flex flex-col  items-center justify-center bg-background">
+          <div className="max-w-md p-6 bg-secondary rounded-lg shadow-lg">
             <div className="flex flex-col items-center space-y-4">
               <p className="text-2xl font-bold text-card-foreground">
                 Run this command in your terminal to send direct notification to
                 my phone.
               </p>
-              <div className="flex items-center space-x-2">
+              <div className="flex items-center bg-black p-3 rounded-md space-x-2">
                 <Button
                   variant="ghost"
                   size="icon"
                   className="text-card-foreground hover:bg-muted/50"
                   onClick={() => {
                     navigator.clipboard.writeText(
-                      'curl -d "Hey" server.fosspage.com/alerts',
+                      'curl -d "Hey!" server.fosspage.com/alerts',
                     );
                     toast({
                       title: "Command copied to cipboard",
@@ -64,7 +65,7 @@ export function Typewriter() {
                   <span className="sr-only">Copy text</span>
                 </Button>
                 <p className="text-muted-foreground">
-                  curl -d "Hey" server.fosspage.com/alerts
+                  curl -d &quot;Hey!&quot; server.fosspage.com/alerts
                 </p>
               </div>
             </div>
@@ -72,7 +73,6 @@ export function Typewriter() {
         </div>
       </div>
 
-      <TypewriterEffectSmooth words={words} />
       <div className="flex flex-row md:flex-row space-y-4 md:space-y-0 space-x-0 md:space-x-4 mt-10">
         <Link href="https://github.com/prathamdupare">
           <button className="p-[3px] relative">

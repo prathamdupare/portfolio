@@ -1,9 +1,10 @@
 import { cn } from "@/utils/cn";
 import { AnimatePresence, motion } from "framer-motion";
-import { EarthIcon, GithubIcon } from "lucide-react";
+import { GithubIcon } from "lucide-react";
 import Link from "next/link";
+
+import { Link as LinkIcon } from "lucide-react";
 import { useState } from "react";
-import { Button } from "./button";
 
 export const HoverEffect = ({
   items,
@@ -27,7 +28,7 @@ export const HoverEffect = ({
       )}
     >
       {items.map((item, idx) => (
-        <div className="">
+        <div key={item.link} className="">
           <div
             className="relative group block p-2 h-full w-full"
             key={item.link}
@@ -51,15 +52,25 @@ export const HoverEffect = ({
             <Card>
               <CardTitle>{item.title}</CardTitle>
               <CardDescription>{item.description}</CardDescription>
+              <div className="flex gap-2">
+                <Link href={item.code}>
+                  <button className="p-[3px] my-4 relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                    <div className="flex flex-row gap-2 px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                      <GithubIcon />
+                    </div>
+                  </button>
+                </Link>
 
-              <Link href={item.code}>
-                <button className="p-[3px] my-4 relative">
-                  <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
-                  <div className="flex flex-row gap-2 px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
-                    <GithubIcon />
-                  </div>
-                </button>
-              </Link>
+                <Link href={item.link}>
+                  <button className="p-[3px] my-4 relative">
+                    <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
+                    <div className="flex flex-row gap-2 px-8 py-2  bg-black rounded-[6px]  relative group transition duration-200 text-white hover:bg-transparent">
+                      <LinkIcon />
+                    </div>
+                  </button>
+                </Link>
+              </div>
             </Card>
           </div>
         </div>

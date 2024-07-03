@@ -4,8 +4,7 @@ export default function Footer() {
     <footer className=" py-8 md:py-12 w-full">
       <div className="container max-w-5xl mx-auto flex flex-col items-center justify-between gap-8 md:flex-row">
         <div className="flex items-center gap-2">
-          <MountainIcon className="h-6 w-6 text-primary" />
-          <span className="text-lg font-semibold">Acme Inc.</span>
+          <span className="text-lg font-semibold">Pratham Dupare</span>
         </div>
         <nav className="flex flex-wrap items-center justify-center gap-4 md:gap-6">
           <Link
