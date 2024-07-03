@@ -1,5 +1,4 @@
 import Link from "next/link";
-
 export default function Footer() {
   return (
     <footer className=" py-8 md:py-12 w-full">
@@ -54,7 +53,7 @@ export default function Footer() {
   );
 }
 
-function GitlabIcon(props) {
+function GitlabIcon(props: any) {
   return (
     <svg
       {...props}
@@ -73,7 +72,7 @@ function GitlabIcon(props) {
   );
 }
 
-function LinkedinIcon(props) {
+function LinkedinIcon(props: any) {
   return (
     <svg
       {...props}
@@ -94,7 +93,7 @@ function LinkedinIcon(props) {
   );
 }
 
-function MountainIcon(props) {
+function MountainIcon(props: any) {
   return (
     <svg
       {...props}
@@ -113,7 +112,7 @@ function MountainIcon(props) {
   );
 }
 
-function TwitterIcon(props) {
+function TwitterIcon(props: any) {
   return (
     <svg
       {...props}
