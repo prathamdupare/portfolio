@@ -52,7 +52,7 @@ export function Typewriter() {
                   className="text-card-foreground hover:bg-muted/50"
                   onClick={() => {
                     navigator.clipboard.writeText(
-                      'curl -d "Hey!" server.fosspage.com/alerts',
+                      "curl -d 'Hey!' server.fosspage.com/alerts",
                     );
                     toast({
                       title: "Command copied to cipboard",
