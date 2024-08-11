@@ -98,19 +98,19 @@ const secondArray = skills.slice(9, 13);
 
 export default function Skills() {
   return (
-    <div className="flex flex-col my-10  items-center justify-center">
+    <div className="flex flex-col my-10 items-center justify-center p-4 sm:p-6 md:p-8">
       <p className="text-2xl md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
         Skills
       </p>
-      <p className="text-base md:text-lg bg-secondary p-3 rounded-md mt-4 text-white font-normal inter-var text-center">
+      <p className="text-base md:text-lg bg-secondary p-3 rounded-md mt-4 text-white font-normal inter-var text-center max-w-full sm:max-w-md">
         Hover over the icons to see info.
       </p>
 
-      <div className="flex flex-row  items-center justify-center my-10  w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center my-10 w-full flex-wrap gap-4">
         <AnimatedTooltip items={firstArray} />
       </div>
 
-      <div className="flex flex-row  items-center justify-center my-10  w-full">
+      <div className="flex flex-col md:flex-row items-center justify-center my-10 w-full flex-wrap gap-4">
         <AnimatedTooltip items={secondArray} />
       </div>
     </div>

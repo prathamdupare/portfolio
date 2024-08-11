@@ -68,6 +68,10 @@ const config = {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
         },
+        "shadow-slide": {
+          "0%": { background: "hsl(var(--primary) / 20%)", right: "460px" },
+          "100%": { background: "hsl(var(--primary) / 80%)", right: "160px" },
+        },
         "accordion-up": {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
@@ -76,6 +80,7 @@ const config = {
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "shadow-slide": "shadow-slide 4s linear infinite alternate",
       },
     },
   },

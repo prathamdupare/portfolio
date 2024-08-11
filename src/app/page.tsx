@@ -8,7 +8,7 @@ import { Experience } from "@/components/Experience";
 import { Separator } from "@/components/ui/separator";
 export default function Home() {
   return (
-    <>
+    <div className="backdrop-blur-sm">
       <TracingBeam>
         <Typewriter />
         <Separator />
@@ -21,6 +21,6 @@ export default function Home() {
         <Achievements />
         <Footer />
       </TracingBeam>
-    </>
+    </div>
   );
 }
