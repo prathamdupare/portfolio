@@ -81,7 +81,7 @@ export function Typewriter() {
             </div>
           </button>
         </Link>
-        <Link href="https://blog.fosspage.com/">
+        <Link href="https://blog.fosspage.tech/">
           <button className="p-[3px] relative">
             <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-lg" />
             <div className="flex flex-row gap-2 px-8 py-2 bg-black rounded-[6px] relative group transition duration-200 text-white hover:bg-transparent">

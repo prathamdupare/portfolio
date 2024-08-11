@@ -25,6 +25,14 @@ export const projects = [
     link: "https://ai-post-generator-theta.vercel.app/",
     code: "https://github.com/prathamdupare/dailypulse-news",
   },
+
+  {
+    title: "Simple Meditation ",
+    description:
+      "A simple Meditation App for both Android as well as iOS made with React Native, ",
+    link: "",
+    code: "https://github.com/prathamdupare/simple-meditation",
+  },
 ];
 
 export default function Work() {

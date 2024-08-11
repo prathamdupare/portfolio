@@ -15,21 +15,7 @@ export default function Footer() {
             Home
           </Link>
           <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4"
-            prefetch={false}
-          >
-            Products
-          </Link>
-          <Link
-            href="#"
+            href="mailto:prathmeshdupare@gmail.com"
             className="text-sm font-medium hover:underline underline-offset-4"
             prefetch={false}
           >
@@ -37,13 +23,28 @@ export default function Footer() {
           </Link>
         </nav>
         <div className="flex items-center gap-4 md:gap-6">
-          <Link href="#" aria-label="Twitter" target="_blank" prefetch={false}>
+          <Link
+            href="https://x.com/prathammdupare"
+            aria-label="Twitter"
+            target="_blank"
+            prefetch={false}
+          >
             <TwitterIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="#" aria-label="LinkedIn" target="_blank" prefetch={false}>
+          <Link
+            href="https://www.linkedin.com/in/pratham-dupare-a99b97247/"
+            aria-label="LinkedIn"
+            target="_blank"
+            prefetch={false}
+          >
             <LinkedinIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
-          <Link href="#" aria-label="GitHub" target="_blank" prefetch={false}>
+          <Link
+            href="https://github.com/prathamdupare"
+            aria-label="GitHub"
+            target="_blank"
+            prefetch={false}
+          >
             <GitlabIcon className="h-5 w-5 text-muted-foreground hover:text-primary transition-colors" />
           </Link>
         </div>
