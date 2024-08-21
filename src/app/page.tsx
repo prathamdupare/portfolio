@@ -6,11 +6,15 @@ import Footer from "@/components/Footer";
 import Achievements from "@/components/Achievements";
 import { Experience } from "@/components/Experience";
 import { Separator } from "@/components/ui/separator";
+import GitHubCal from "@/components/GitHub";
+
 export default function Home() {
   return (
     <div className="backdrop-blur-sm">
       <TracingBeam>
         <Typewriter />
+        <Separator />
+        <GitHubCal />
         <Separator />
         <Skills />
         <Separator />
