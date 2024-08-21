@@ -2,6 +2,7 @@
 import React from "react";
 import Image from "next/image";
 import { StickyScroll } from "./ui/sticky-scroll-reveal";
+import { ArrowDown } from "lucide-react";
 
 const content = [
   {
@@ -59,7 +60,10 @@ export function Experience() {
       <p className="text-2xl mb-4 md:text-4xl lg:text-7xl text-white font-bold inter-var text-center">
         Experience
       </p>
-      <p className="p-3 my-4 bg-secondary rounded-md">Scroll to view more..</p>
+      <p className="flex flex-row p-3 my-4 bg-red-800 border-b-4 border-white  font-bold rounded-md">
+        Scroll to view more..
+        <ArrowDown />
+      </p>
       <StickyScroll content={content} />
     </div>
   );
